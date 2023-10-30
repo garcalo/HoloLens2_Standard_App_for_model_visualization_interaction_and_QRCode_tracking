@@ -1,6 +1,6 @@
 # HoloLens2 Standard App for model visualization interaction and QRCode tracking
 This repository contains an app designed to be used on Microsoft HoloLens 2. The app provides a userfriendly solution for users to visualize and interact any 3D models desired, these models can also be registered to a tracked QR code, all of this can be configured in the app's control panel.
-### App workflow overview
+## App workflow overview
 
 The overall idea of the workflow is illustrated by the figure below and is the following
 1. First the user is required to upload the models and materials to a Google Drive folder that is linked to the app
@@ -10,3 +10,10 @@ The overall idea of the workflow is illustrated by the figure below and is the f
 
 ![app workflow overview](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/f4dfb4e5-fcba-44de-bee5-6f2f3ac3b1a8)
  
+## App user interface
+
+## App integration of QR code tracking system
+
+## App configuration file
+
+## App integration with Google Drive folder
