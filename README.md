@@ -31,7 +31,8 @@ The complete control panel can be seen below:
 <img width="300" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/72b73308-4c98-4258-a964-6aa6a06b876c">
 
 ## App integration of QR code tracking system
-
+The app integrates the QR code tracking architecture presented in https://github.com/garcalo/QR-code-tracking-architecture-for-HoloLens-2. The architecture is integrated in the app in such way that when the user clicks on the "Load Models" buttons all configuration needed for the tracking to waork is done automatically.
+The scripts that belong to this tracking archicture are contained within the assets folder of the app, in a folder named "QR code tracking scripts".
 ## App configuration file
 
 ## App integration with Google Drive folder
