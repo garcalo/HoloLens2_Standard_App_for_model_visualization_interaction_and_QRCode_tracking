@@ -13,15 +13,23 @@ The overall idea of the workflow is illustrated by the figure below and is the f
 ## App user interface
 The app has a moveable control panel with various buttons. Here's what each button does:
 
-- Load Models: Downloads files and loads 3D models into the app.
-- Restart Size & Position: Resets the models to their original position and size.
-- Interactable: Lets you move, rotate, or scale the models with your hands. QR code tracking stops when you toggle this on.
-- Clear Memory: Frees up storage by deleting files.
-- Restart Scale: Only resets the models to their original size.
+- __Load Models__: Downloads files and loads 3D models into the app.
+- __Restart Size & Position__: Resets the models to their original position and size.
+- __Interactable__: Lets you move, rotate, or scale the models with your hands. QR code tracking stops when you toggle this on.
+- __Clear Memory__: Frees up storage by deleting files.
+- __Restart Scale__: Only resets the models to their original size.
+
+![button lineup (1)](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/4ac95100-6b73-4fa0-b28a-b43a4d0290a1)
+
 
 The panel can show up to 8 model selection buttons, but it adapts to fewer models too. If there are fewer than 8 models, extra buttons get hidden.
 
 Lastly, there's a toggle switch and a slider. The toggle switch lets you hide or show the selected model. The slider changes the model's transparency.
+
+The complete control panel can be seen below:
+
+<img width="300" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/72b73308-4c98-4258-a964-6aa6a06b876c">
+
 ## App integration of QR code tracking system
 
 ## App configuration file
