@@ -28,7 +28,7 @@ Lastly, there's a toggle switch and a slider. The toggle switch lets you hide or
 
 The complete control panel can be seen below:
 
-<img width="300" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/72b73308-4c98-4258-a964-6aa6a06b876c">
+<img width="450" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/72b73308-4c98-4258-a964-6aa6a06b876c">
 
 ## App integration of QR code tracking system
 The app integrates the QR code tracking architecture presented in https://github.com/garcalo/QR-code-tracking-architecture-for-HoloLens-2. The architecture is integrated in the app in such way that when the user clicks on the "Load Models" buttons all configuration needed for the tracking to waork is done automatically.
@@ -61,8 +61,9 @@ To download the 3D models and the materials from the Google Drive folder connect
 
 3. This link must then be pasted into the webpage *"Google Drive Direct Link Generator"* (https://sites.google.com/site/gdocs2direct/) to obtain the direct link to the file:
 
-![google drive direct link generator](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/7fa78d25-5fd0-4b37-a1dc-3e4745d42380)
-<img width="600" alt="url check id" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/bc0c9c01-2890-4910-8bd4-9fee4f60d4a7">
+<img width="900" alt="google drive direct link generator" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/4b834704-fc55-4bdd-b3c5-b726dc1eac18">
+
+<img width="900" alt="url check id" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/bc0c9c01-2890-4910-8bd4-9fee4f60d4a7">
 
 
 ## App integration with Google Drive folder
