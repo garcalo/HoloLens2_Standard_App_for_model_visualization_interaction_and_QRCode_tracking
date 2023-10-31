@@ -12,6 +12,7 @@ When the repository is cloned, follow these instructions:
    - Mixed Reality OpenXR Plugin - version 1.9.0
   <img width="686" alt="Captura de pantalla 2023-10-17 122327" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/3f169df3-cf3e-492f-bc8f-2420a8a54b6f">
   <img width="688" alt="platform support" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/52f61132-e17a-42bb-964c-1522add65330">
+  
 3. Install NuGet for Unity following the repository instructions: https://github.com/GlitchEnzo/NuGetForUnity. I recommend the install via .unitypackage file
     - Inside Unity, use NuGet to install the Microsoft.MixedReality.QR. For this, click on the NuGet tab, then on Manage NuGet Packages. This way you will obtain a window where you can search for the package. This can be seen in the image below:
       <img width="334" alt="install microsoft mixed reality qr from nuget" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/1d08dd34-a967-4544-94fa-bfed63bbbf51">
