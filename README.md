@@ -89,12 +89,15 @@ To download the 3D models and the materials from the Google Drive folder connect
 
 
 ### App integration with Google Drive folder
-
 To connect the app with the Google Drive folder, the user must upload the filled configuration file to the Google Drive folder. Then, obtain the direct link to the file by following the instructions in the section *"Direct download links from Google Drive"* previously explained. Then this link must be pasted in the text file present in the app data, in the location Assets/Resources/Configuration file url.txt. Just like it can be seen in the image below:
 
 <img width="587" alt="configuration file example opened in text editor" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/b9619e5e-ef75-452c-b630-6443d2ebb8b7">
 
+### 3D models and materials download
+When the app is initialized, the control panel appears in front of the user, then the next step for the user is to click on the *"Load Models"* button. What this does is first checking if the 3D models are already present in the device's internal storage. If they are, the app just loads them into scene as well as configuring the user interace and the QR code tracking system. If they were not present, then the download is triggered, the app will first download the configuration file and then use its information to download the models and the materials into the device's internal storage, then load everything into scene and configure the user interface and QR code tracking system. To reset this and be able to download the configuration file again, which you'll want to do every time you modify its contents, you should click on the *"Clear Memory"* button just before clicking on the *"Load Models"* button, this will erase all contents of the local folder of the device and you'll be able to download new 3D models and materials. 
 
 ### Changing the 3D models
 
+To change the 3D models to visualize in the app, the user is not requiered to create a new configuration file, then upload it to Google Drive, then generate the Google Drive direct link and then paste this link in the .txt file that contains it. Instead, the user can go to the configuration file already present in the Google Drive folder and edit it online using the online text editor provided by Google Drive as it can be seen in the image below. In this way, when the app downloads the configuration file again, it will obtain all the new information and the user will avoid having to go through the tedious process of creating a new configuration file from scratch. 
 
+<img width="600" alt="text editor example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/55f79d3c-0b2c-4255-9120-e6b1d1257999">
