@@ -15,7 +15,7 @@ When the repository is cloned, follow these instructions:
   
 3. Install NuGet for Unity following the repository instructions: https://github.com/GlitchEnzo/NuGetForUnity. I recommend the install via .unitypackage file
     - Inside Unity, use NuGet to install the Microsoft.MixedReality.QR. For this, click on the NuGet tab, then on Manage NuGet Packages. This way you will obtain a window where you can search for the package. This can be seen in the image below:
-      <img width="334" alt="install microsoft mixed reality qr from nuget" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/1d08dd34-a967-4544-94fa-bfed63bbbf51">
+      <img width="600" alt="install microsoft mixed reality qr from nuget" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/1d08dd34-a967-4544-94fa-bfed63bbbf51">
 
  Once this is done, both the app and the QR code tracking architecture integrated in it can be used either using the Holographic Remoting tab in Unity to connect the device using an ip address and run the app in the computer and screencast the functionality into the HoloLens 2 device or building the project in Unity and deploying via Visual Studio.
 
