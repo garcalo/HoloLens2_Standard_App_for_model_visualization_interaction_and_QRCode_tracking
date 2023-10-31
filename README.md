@@ -1,6 +1,27 @@
 # HoloLens2 Standard App for model visualization interaction and QRCode tracking
 This repository contains an app designed to be used on Microsoft HoloLens 2. The app provides a userfriendly solution for users to visualize and interact any 3D models desired, these models can also be registered to a tracked QR code, all of this can be configured in the app's control panel.
-## App workflow overview
+
+## Instructions for using the app
+The app has been developed in Unity 2021.3.9f1. The app has been designed to be used through the Holographic Remoting player, but can also be deployed using Microsoft Visual Studio.
+When the repository is cloned, follow these instructions:
+1. Open the project using Unity 2021.3.9f1
+2. Using the MixedRealityFeatureTool (https://www.microsoft.com/en-us/download/details.aspx?id=102778) make sure you have installed the following packages:
+   - Mixed Reality Toolkit Foundation - version 2.8.3
+   - Mixed Reality Toolkit Standard Assets - version 2.8.3
+   - Mixed Reality Toolkit Tools - version 2.8.3
+   - Mixed Reality OpenXR Plugin - version 1.9.0
+  <img width="686" alt="Captura de pantalla 2023-10-17 122327" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/3f169df3-cf3e-492f-bc8f-2420a8a54b6f">
+  <img width="688" alt="platform support" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/52f61132-e17a-42bb-964c-1522add65330">
+3. Install NuGet for Unity following the repository instructions: https://github.com/GlitchEnzo/NuGetForUnity. I recommend the install via .unitypackage file
+    - Inside Unity, use NuGet to install the Microsoft.MixedReality.QR. For this, click on the NuGet tab, then on Manage NuGet Packages. This way you will obtain a window where you can search for the package. This can be seen in the image below:
+      <img width="334" alt="install microsoft mixed reality qr from nuget" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/1d08dd34-a967-4544-94fa-bfed63bbbf51">
+
+ Once this is done, both the app and the QR code tracking architecture integrated in it can be used either using the Holographic Remoting tab in Unity to connect the device using an ip address and run the app in the computer and screencast the functionality into the HoloLens 2 device or building the project in Unity and deploying via Visual Studio.
+
+
+
+## App information
+### App workflow overview
 
 The overall idea of the workflow is illustrated by the figure below and is the following
 1. First the user is required to upload the models and materials to a Google Drive folder that is linked to the app
@@ -10,7 +31,7 @@ The overall idea of the workflow is illustrated by the figure below and is the f
 
 ![app workflow overview](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/f4dfb4e5-fcba-44de-bee5-6f2f3ac3b1a8)
  
-## App user interface
+### App user interface
 The app has a moveable control panel with various buttons. Here's what each button does:
 
 - __Load Models__: Downloads files and loads 3D models into the app.
@@ -30,12 +51,12 @@ The complete control panel can be seen below:
 
 <img width="450" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/72b73308-4c98-4258-a964-6aa6a06b876c">
 
-## App integration of QR code tracking system
+### App integration of QR code tracking system
 The app integrates the QR code tracking architecture presented in https://github.com/garcalo/QR-code-tracking-architecture-for-HoloLens-2. The architecture is integrated in the app in such way that when the user clicks on the "Load Models" buttons all configuration needed for the tracking to waork is done automatically.
 The scripts that belong to this tracking archicture are contained within the assets folder of the app, in a folder named "QR code tracking scripts".
 
 
-## App configuration file
+### App configuration file
 
 The application requieres a configuration file that needs to be present in the Google Drive folder linked to the app. This file can be seen below and contains the following information:
 
@@ -47,13 +68,13 @@ The application requieres a configuration file that needs to be present in the G
 
 <img width="751" alt="configuration file example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/b641233a-8074-4243-a839-6aacfd14dc1c">
 
-## Direct download links from Google Drive
+### Direct download links from Google Drive
 
 To download the 3D models and the materials from the Google Drive folder connected to the app, the links provided by the user need to be urls that directly trigger the download of the files and not the regular "share" url obtained in the Google Drive webpage. To obtain the needed url the steps are the following:
 
 1. Once the file is present in the Google Drive folder, the user must select it and click on the "share" icon:
    
-<img width="287" alt="select share for the file" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/03678333-bf60-49aa-a50c-b81d296baa78">
+<img width="400" alt="select share for the file" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/03678333-bf60-49aa-a50c-b81d296baa78">
 
 2. Then the user must copy the share url, making sure the visibility option selected is "Anyone with the link":
 
@@ -66,4 +87,13 @@ To download the 3D models and the materials from the Google Drive folder connect
 <img width="900" alt="url check id" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/bc0c9c01-2890-4910-8bd4-9fee4f60d4a7">
 
 
-## App integration with Google Drive folder
+### App integration with Google Drive folder
+
+To connect the app with the Google Drive folder, the user must upload the filled configuration file to the Google Drive folder. Then, obtain the direct link to the file by following the instructions in the section *"Direct download links from Google Drive"* previously explained. Then this link must be pasted in the text file present in the app data, in the location Assets/Resources/Configuration file url.txt. Just like it can be seen in the image below:
+
+<img width="587" alt="configuration file example opened in text editor" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/b9619e5e-ef75-452c-b630-6443d2ebb8b7">
+
+
+### Changing the 3D models
+
+
