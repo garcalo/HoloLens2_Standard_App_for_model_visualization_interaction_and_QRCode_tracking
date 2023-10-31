@@ -35,4 +35,15 @@ The app integrates the QR code tracking architecture presented in https://github
 The scripts that belong to this tracking archicture are contained within the assets folder of the app, in a folder named "QR code tracking scripts".
 ## App configuration file
 
+The application requieres a configuration file that needs to be present in the Google Drive folder linked to the app. This file can be seen below and contains the following information:
+
+- __models_interactable_individually__ : this option allows the user to select if they want to be able to interact with the models one by one, that is, be able to grab them and move them around one by one, or, on the opposite, do this with all models together as a whole. This last option, enabled when the user sets this field as *"false"*,  will mean that the models cannot be separated from one to another
+- __model__X____url__ : the user is requiered to provide here the link to the specific model placed in the Google drive folder so that the app can download it. This link cannot be the regular share link directly obtained from Google Drive, it has to be a direct download link. See the *"Direct download links"* section for more information on this
+- __model__X___name__ : the user is required to provide the name of each of the models, which will be used in the automatic configuration of the control panel and will appear in the model selection button
+- __model__X___material__url__ : the user is required to provide here the link to the specific material 
+
+
+<img width="751" alt="configuration file example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/b641233a-8074-4243-a839-6aacfd14dc1c">
+
+
 ## App integration with Google Drive folder
