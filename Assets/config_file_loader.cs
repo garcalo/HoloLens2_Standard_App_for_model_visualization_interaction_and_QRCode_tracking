@@ -220,7 +220,9 @@ public class config_file_loader : MonoBehaviour
         // start coroutine for all 7 models
         // First create parent for all 
         ParentModel = new GameObject("ModelsHolder");
-        ParentModel.transform.position = new Vector3(data.model_position_with_respect_to_qr_code_X, data.model_position_with_respect_to_qr_code_Y, data.model_position_with_respect_to_qr_code_Z);
+        //ParentModel.transform.position = new Vector3(0.643418f, 1.023573f, -0.1277779f);
+        //ParentModel.transform.eulerAngles = new Vector3(49.173f, -61.233f, 77.955f);
+        //ParentModel.transform.position = new Vector3(data.model_position_with_respect_to_qr_code_X, data.model_position_with_respect_to_qr_code_Y, data.model_position_with_respect_to_qr_code_Z);
         Debug.Log("[config_script] modelsHolder local scale: " + (data.model_position_with_respect_to_qr_code_X, data.model_position_with_respect_to_qr_code_Y, data.model_position_with_respect_to_qr_code_Z)); //Debug
         makeInteractable(ParentModel, ref ComponentsAdded_parent);
 
@@ -439,7 +441,9 @@ public class config_file_loader : MonoBehaviour
             // Load the model from the local directory
             GameObject model = new OBJLoader().Load(modelpath);
             model.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
-            model.transform.position = new Vector3(0, 0, 0);
+            //model.transform.position = new Vector3(0, 0, 0);
+            model.transform.position = new Vector3(0.5f, 0.775f, -0.1f);
+            model.transform.eulerAngles = new Vector3(49.173f, -61.233f, 77.955f);
 
             // store this values to be able to use them to restore size and position
             Debug.Log("reading scale as: " + model.transform.localScale);
