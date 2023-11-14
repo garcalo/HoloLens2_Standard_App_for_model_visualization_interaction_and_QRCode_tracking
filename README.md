@@ -10,12 +10,16 @@ When the repository is cloned, follow these instructions:
    - Mixed Reality Toolkit Standard Assets - version 2.8.3
    - Mixed Reality Toolkit Tools - version 2.8.3
    - Mixed Reality OpenXR Plugin - version 1.9.0
-  <img width="686" alt="Captura de pantalla 2023-10-17 122327" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/3f169df3-cf3e-492f-bc8f-2420a8a54b6f">
-  <img width="688" alt="platform support" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/52f61132-e17a-42bb-964c-1522add65330">
+   
+<img width="686" alt="Captura de pantalla 2023-10-17 122327" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/d440fc8a-59cb-4aee-8c40-1c29a81122a5">
+<img width="688" alt="platform support" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/7763d579-a737-4d36-a0a2-8ec67982a2d5">
+
   
 3. Install NuGet for Unity following the repository instructions: https://github.com/GlitchEnzo/NuGetForUnity. I recommend the install via .unitypackage file
     - Inside Unity, use NuGet to install the Microsoft.MixedReality.QR. For this, click on the NuGet tab, then on Manage NuGet Packages. This way you will obtain a window where you can search for the package. This can be seen in the image below:
-      <img width="600" alt="install microsoft mixed reality qr from nuget" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/1d08dd34-a967-4544-94fa-bfed63bbbf51">
+    
+      <img width="334" alt="install microsoft mixed reality qr from nuget" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/81e9cf1d-26ac-49d2-a54e-d5e1c3bbf52e">
+
 
  Once this is done, both the app and the QR code tracking architecture integrated in it can be used either using the Holographic Remoting tab in Unity to connect the device using an ip address and run the app in the computer and screencast the functionality into the HoloLens 2 device or building the project in Unity and deploying via Visual Studio.
 
@@ -30,7 +34,7 @@ The overall idea of the workflow is illustrated by the figure below and is the f
 3. Upon launching the app, a control panel will appear in front of the user
 4. By clicking the "Load Models" button, the user will trigger the download from Google Drive or simply the load of the models from the device's storage (if they were already present). At the same time the control panel will be         automatically configured, as well as the QR code tracking system to work with these specific 3D models.
 
-![app workflow overview](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/f4dfb4e5-fcba-44de-bee5-6f2f3ac3b1a8)
+![app workflow overview](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/a3da7808-e70d-475a-a005-76a98d868cbf)
  
 ### App user interface
 The app has a moveable control panel with various buttons. Here's what each button does:
@@ -41,7 +45,8 @@ The app has a moveable control panel with various buttons. Here's what each butt
 - __Clear Memory__: Frees up storage by deleting files.
 - __Restart Scale__: Only resets the models to their original size.
 
-![button lineup (1)](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/4ac95100-6b73-4fa0-b28a-b43a4d0290a1)
+
+![button lineup (1)](https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/62253d7c-2cf6-4e49-962c-be0c6fdd7cf9)
 
 
 The panel can show up to 8 model selection buttons, but it adapts to fewer models too. If there are fewer than 8 models, extra buttons get hidden.
@@ -50,7 +55,7 @@ Lastly, there's a toggle switch and a slider. The toggle switch lets you hide or
 
 The complete control panel can be seen below:
 
-<img width="450" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/72b73308-4c98-4258-a964-6aa6a06b876c">
+<img width="300" alt="unconfigured controlpanel_v3" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/23348d5d-c249-41d0-816f-5d1ac72e10e9">
 
 ### App integration of QR code tracking system
 The app integrates the QR code tracking architecture presented in https://github.com/garcalo/QR-code-tracking-architecture-for-HoloLens-2. The architecture is integrated in the app in such way that when the user clicks on the "Load Models" buttons all configuration needed for the tracking to waork is done automatically.
@@ -66,8 +71,7 @@ The application requieres a configuration file that needs to be present in the G
 - __modelX_name__ : the user is required to provide the name of each of the models, which will be used in the automatic configuration of the control panel and will appear in the model selection button
 - __modelX_material__url__ : the user is required to provide here the link to the specific material. In the same way as before, this link cannot be the regular share link directly obtained from Google Drive, it has to be a direct download link. See the *"Direct download links from Google Drive"* section for more information on this. The material file format must be .mtl. In this way the app can take, for instance, materials generated using the 3D Slicer software (https://www.slicer.org/)
 
-
-<img width="751" alt="configuration file example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/b641233a-8074-4243-a839-6aacfd14dc1c">
+<img width="751" alt="configuration file example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/f7f21376-4fdc-476c-b36c-246b26ce0bfe">
 
 ### Direct download links from Google Drive
 
@@ -75,7 +79,7 @@ To download the 3D models and the materials from the Google Drive folder connect
 
 1. Once the file is present in the Google Drive folder, the user must select it and click on the "share" icon:
    
-<img width="400" alt="select share for the file" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/03678333-bf60-49aa-a50c-b81d296baa78">
+<img width="287" alt="select share for the file" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/5dd3c1b0-d022-415f-a709-8523ef3ee130">
 
 2. Then the user must copy the share url, making sure the visibility option selected is "Anyone with the link":
 
@@ -83,15 +87,15 @@ To download the 3D models and the materials from the Google Drive folder connect
 
 3. This link must then be pasted into the webpage *"Google Drive Direct Link Generator"* (https://sites.google.com/site/gdocs2direct/) to obtain the direct link to the file:
 
-<img width="900" alt="google drive direct link generator" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/4b834704-fc55-4bdd-b3c5-b726dc1eac18">
+<img width="923" alt="google drive direct link generator" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/c0bf3910-872d-4064-a539-5969fea4968a">
 
-<img width="900" alt="url check id" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/bc0c9c01-2890-4910-8bd4-9fee4f60d4a7">
+<img width="919" alt="url check id" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/aef49afe-2faa-4313-8e65-aa636794ddbf">
 
 
 ### App integration with Google Drive folder
 To connect the app with the Google Drive folder, the user must upload the filled configuration file to the Google Drive folder. Then, obtain the direct link to the file by following the instructions in the section *"Direct download links from Google Drive"* previously explained. Then this link must be pasted in the text file present in the app data, in the location Assets/Resources/Configuration file url.txt. Just like it can be seen in the image below:
 
-<img width="587" alt="configuration file example opened in text editor" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/b9619e5e-ef75-452c-b630-6443d2ebb8b7">
+<img width="587" alt="configuration file example opened in text editor" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/c5959d36-d218-42e6-99dc-9a87fde3d870">
 
 ### 3D models and materials download
 When the app is initialized, the control panel appears in front of the user, then the next step for the user is to click on the *"Load Models"* button. What this does is first checking if the 3D models are already present in the device's internal storage. If they are, the app just loads them into scene as well as configuring the user interace and the QR code tracking system. If they were not present, then the download is triggered, the app will first download the configuration file and then use its information to download the models and the materials into the device's internal storage, then load everything into scene and configure the user interface and QR code tracking system. To reset this and be able to download the configuration file again, which you'll want to do every time you modify its contents, you should click on the *"Clear Memory"* button just before clicking on the *"Load Models"* button, this will erase all contents of the local folder of the device and you'll be able to download new 3D models and materials. 
@@ -100,4 +104,4 @@ When the app is initialized, the control panel appears in front of the user, the
 
 To change the 3D models to visualize in the app, the user is not requiered to create a new configuration file, then upload it to Google Drive, then generate the Google Drive direct link and then paste this link in the .txt file that contains it. Instead, the user can go to the configuration file already present in the Google Drive folder and edit it online using the online text editor provided by Google Drive as it can be seen in the image below. In this way, when the app downloads the configuration file again, it will obtain all the new information and the user will avoid having to go through the tedious process of creating a new configuration file from scratch. 
 
-<img width="600" alt="text editor example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/55f79d3c-0b2c-4255-9120-e6b1d1257999">
+<img width="523" alt="text editor example" src="https://github.com/garcalo/HoloLens2_Standard_App_for_model_visualization_interaction_and_QRCode_tracking/assets/133862204/cc92cd0c-777e-4b75-a803-89d77859af48">
